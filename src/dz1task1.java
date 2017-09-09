@@ -1,23 +1,21 @@
 import java.util.Scanner;
-public class test{
-    public static void main(String[] args){
+class dz1task1 {
+    public static void main(String[] args) {
         //Создадим переменную, в которую занесем значение числа, заданного пользователем
         int a;
         //Переменная, которой будет присваиваться значение факториала заданного числа. Тип переменной long также имеет свои ограничения на размер, что приводит к ошибке если факториал заданного пользователем числа больше максимального размера числа типа long
-        long b=1;
-        Scanner scn=new Scanner(System.in);
+        long b = 1;
+        Scanner scn = new Scanner(System.in);
         System.out.println("Введите натуральное число");
         //Проверка, является ли введенный знак натуральным числом
-        if(scn.hasNextInt()){
+        if (scn.hasNextInt()) {
             //Если проверка пройдена, переменной а присваивается значение введенного числа
-            a=scn.nextInt();
+            a = scn.nextInt();
             //Так как факториалом является произведение всех чисел до заданного числа с помощью простого цикла получим это значение
-            for(int i=a;i>0;i--){
-                b*=i;
+            for (int i = a; i > 0; i--) {
+                b *= i;
             }
-            System.out.println("Факториал числа "+a+" равен "+b);
-        }
-        else System.out.println("Ошибка. Введено не число");
-
+            System.out.println("Факториал числа " + a + " равен " + b);
+        } else System.out.println("Ошибка. Введено не число");
     }
 }

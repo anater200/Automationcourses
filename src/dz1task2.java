@@ -1,4 +1,4 @@
-public class dz1task2{
+class dz1task2{
     public static void main(String[] args){
         int m=7;
         int n=4;
