@@ -1,7 +1,4 @@
 class dz2task1{
-
-    //Создадим метод, который будет возвращать случайное целое число из отрезка a-b, которые будт его параметрами
-
     public static int randomTest(int a,int b){
         if(a>b){
             int c=(int)(Math.random()*(a-b+1))+b;
@@ -12,9 +9,7 @@ class dz2task1{
             return c;
         }
     }
-    //Создадим метод, который будет возвращать заполненный массив
     public static int [] zapolnenieMassiva(int [] a){
-        //Определим случайные значения, в рамках которых будут находится значения элементов массива
         int z = (int)(Math.random()*100);
         int x = (int)(Math.random()*100);
         for(int i=0;i<a.length;i++){
@@ -22,7 +17,6 @@ class dz2task1{
         }
         return a;
     }
-    //Функция выводящая на экран элементы массива в строку, после выведения последнего элемента строка переносится
     public static void printTest(int [] a){
         for(int i=0;i<a.length;i++){
             System.out.print(a[i]+" ");
@@ -31,7 +25,6 @@ class dz2task1{
         }
     }
     public static void main(String[] args){
-        //Создаем массив, заполняем и выводим на экра при помощи прописанных методов. И так 5 раз.
         int[] Mas1=new int[10];
         zapolnenieMassiva(Mas1);
         printTest(Mas1);

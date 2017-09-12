@@ -7,7 +7,6 @@ class dz1task4 {
         Scanner sr = new Scanner(System.in);
         n = sr.nextInt();
         while(n != 0){
-            //Суммирование цифр числа
             sum = sum + (n % 10);
             n/=10;
         }
